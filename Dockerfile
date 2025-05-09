@@ -13,7 +13,7 @@ RUN npm install
 COPY . .
 
 # Build ứng dụng React
-RUN npm run build
+RUN NODE_OPTIONS="--max_old_space_size=1024" npm run build
 
 FROM nginx:alpine
 
