@@ -2,20 +2,18 @@ import { Outlet, Link } from "react-router-dom";
 
 const Layout = () => {
    return (
-      <>
-         <nav>
-            <ul>
-               <li>
+      <div style={{margin : 50}}>
+            <div style={{display:"flex", flexDirection:"row", gap:15}}>
+               <b>
                   <Link to="/">Home</Link>
-               </li>
-               <li>
+               </b>
+               <b>
                   <Link to="/blog">Blog</Link>
-               </li>
-            </ul>
-         </nav>
+               </b>
+            </div>
 
          <Outlet />
-      </>
+      </div>
    );
 };
 
