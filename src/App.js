@@ -19,7 +19,7 @@ function App() {
    }, []);
    return (
       <div>
-         <h1>User: <i style={{color:"green"}}>{user?.username}</i></h1>
+         <h1>User: <i style={{color:"red"}}>{user?.username}</i></h1>
          <h1>Product List</h1>
          <ul style={{display:"flex", flexDirection:"column", gap:5}}>
             {data.map((product) => (
