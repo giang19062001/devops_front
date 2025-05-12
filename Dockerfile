@@ -9,6 +9,9 @@ COPY package*.json ./
 # Cài đặt dependencies
 RUN npm install
 
+# Đặt CI = Sai để ngăn chặn các cảnh báo bị coi là lỗi trong quá trình xây dựng
+ENV CI=false
+
 # Sao chép mã nguồn còn lại vào container
 COPY . .
 
