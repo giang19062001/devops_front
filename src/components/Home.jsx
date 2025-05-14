@@ -7,13 +7,13 @@ const Home = () => {
 
    useEffect(() => {
       axios
-         .get(`${process.env.REACT_APP_BACKEND}/products`)
+         .get(`${process.env.REACT_APP_BACKEND}/api/products`)
          .then((response) => setData(response.data))
          .catch((error) => console.error(error));
    }, []);
  useEffect(() => {
       axios
-         .get(`${process.env.REACT_APP_BACKEND}/user`)
+         .get(`${process.env.REACT_APP_BACKEND}/api/user`)
          .then((response) => setUser(response.data))
          .catch((error) => console.error(error));
    }, []);
