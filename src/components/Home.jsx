@@ -4,6 +4,7 @@ import axios from "axios";
 const Home = () => {
    const [data, setData] = useState([]);
    const [user, setUser] = useState("");
+   console.log("REACT_APP_BACKEND_PORT", process.env.REACT_APP_BACKEND_PORT)
 
    useEffect(() => {
       axios
