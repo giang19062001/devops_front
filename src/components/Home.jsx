@@ -25,7 +25,7 @@ const Home = () => {
          <ul style={{display:"flex", flexDirection:"column", gap:5}}>
             {data.map((product) => (
                <li key={product.id} style={{ display: "flex", alignItems: "center", gap: 10 }}>
-                  <img src={`${process.env.REACT_APP_BACKEND}/${product.image}`} alt="" style={{ width: 150 }} />
+                  <img src={`${process.env.REACT_APP_BACKEND}:${process.env.REACT_APP_BACKEND_PORT}/${product.image}`} alt="" style={{ width: 150 }} />
                   <b>{product.name}</b>
                </li>
             ))}
